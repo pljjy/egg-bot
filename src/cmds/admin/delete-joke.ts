@@ -1,9 +1,10 @@
-import { admins, dbQuery } from "../../db.js";
+import { ADMINS } from "../../constants.js";
+import { dbQuery } from "../../db.js";
 import { Context } from "telegraf";
 
 export async function deleteJoke(ctx: Context) {
   // TODO: the function should delete jokes by id and ask if user sure if they wanna delete it
-  if (!admins.includes(ctx.message?.from.id)) return;
+  if (!ADMINS.includes(ctx.message?.from.id)) return;
 
   const temp = ctx.text!.split(" ");
   temp.shift();

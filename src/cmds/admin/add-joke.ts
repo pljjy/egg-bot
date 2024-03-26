@@ -1,8 +1,9 @@
-import { admins, dbQuery } from "../../db.js";
+import { ADMINS } from "../../constants.js";
+import { dbQuery } from "../../db.js";
 import { Context } from "telegraf";
 
 export async function addJoke(ctx: Context) {
-  if (!admins.includes(ctx.message?.from.id)) return;
+  if (!ADMINS.includes(ctx.message?.from.id)) return;
 
   const temp = ctx.text!.split(" ");
   temp.shift();
