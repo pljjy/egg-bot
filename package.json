@@ -1,0 +1,29 @@
+{
+  "name": "egg-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "module": "es2022",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node -r tsconfig-paths/register dist/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "@types/lowdb": "^1.0.15",
+    "@types/pg": "^8.11.4",
+    "common-es": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "pg": "^8.11.3",
+    "telegraf": "^4.16.3",
+    "typegram": "^5.2.0"
+  }
+}
