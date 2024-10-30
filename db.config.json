@@ -1,3 +1,6 @@
 {
-  "connectionString": "postgresql://EggJokes_owner:FsVAeQkd15cg@ep-sparkling-dream-a5huxdsz.us-east-2.aws.neon.tech/EggJokes?sslmode=require"
+  "connectionString": "postgresql://EggJokes_owner:FsVAeQkd15cg@ep-sparkling-dream-a5huxdsz.us-east-2.aws.neon.tech/EggJokes?sslmode=require",
+  "keepalive": true,
+  "connectionTimeoutMillis": 0,
+  "idleTimeoutMillis": 0
 }
